@@ -12,14 +12,35 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "com.missalways.chemistry.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "com.missalways.chemistry.proxy.ServerProxy";
 
-    public static enum ChemistryItems{
+    public static enum ChemistryItems {
         HYDROGEN("hydrogen", "ItemHydrogen"),
         HELIUM("helium", "ItemHelium");
 
         private String unlocalizedName;
         private String registryName;
 
-        ChemistryItems(String unlocalizedName, String registryName){
+        ChemistryItems(String unlocalizedName, String registryName) {
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getUnlocalizedName() {
+            return unlocalizedName;
+        }
+
+        public String getRegistryName() {
+            return registryName;
+        }
+
+    }
+
+    public static enum ChemistryBlocks {
+        CHEMISTRYTABLE("chemistryTable", "BlockChemistryTable");
+
+        private String unlocalizedName;
+        private String registryName;
+
+        ChemistryBlocks(String unlocalizedName, String registryName) {
             this.unlocalizedName = unlocalizedName;
             this.registryName = registryName;
         }
