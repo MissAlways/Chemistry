@@ -1,6 +1,5 @@
 package com.missalways.chemistry.init;
 
-import com.missalways.chemistry.Reference;
 import com.missalways.chemistry.items.ItemHelium;
 import com.missalways.chemistry.items.ItemHydrogen;
 import net.minecraft.client.Minecraft;
@@ -32,7 +31,6 @@ public class ModItems {
     }
 
     private static void registerRender(Item item){
-        System.out.println("ModItems.java ----- Item registery name: "+ item.getRegistryName());
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(),"inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
     }
 }
