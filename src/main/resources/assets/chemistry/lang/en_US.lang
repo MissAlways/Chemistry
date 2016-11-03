@@ -1,2 +1,6 @@
 item.hydrogen.name=Hydrogen
 item.helium.name=Helium
+
+tile.chemistryTable.name=Chemistry Table
+
+itemGroup.tabChemistry=Chemistry
