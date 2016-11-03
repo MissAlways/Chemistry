@@ -15,22 +15,22 @@ public class ModItems {
     public static Item hydrogen;
     public static Item helium;
 
-    public static void init(){
+    public static void init() {
         hydrogen = new ItemHydrogen();
         helium = new ItemHelium();
     }
 
-    public static void register(){
+    public static void register() {
         GameRegistry.register(hydrogen);
         GameRegistry.register(helium);
     }
 
-    public static void registerRenders(){
+    public static void registerRenders() {
         registerRender(hydrogen);
         registerRender(helium);
     }
 
-    private static void registerRender(Item item){
+    private static void registerRender(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
     }
 }

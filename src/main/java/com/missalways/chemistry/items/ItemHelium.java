@@ -1,5 +1,6 @@
 package com.missalways.chemistry.items;
 
+import com.missalways.chemistry.Chemistry;
 import com.missalways.chemistry.Reference;
 import net.minecraft.item.Item;
 
@@ -8,8 +9,9 @@ import net.minecraft.item.Item;
  */
 public class ItemHelium extends Item {
 
-    public  ItemHelium() {
+    public ItemHelium() {
         setUnlocalizedName(Reference.ChemistryItems.HELIUM.getUnlocalizedName());
         setRegistryName(Reference.ChemistryItems.HELIUM.getRegistryName());
+        setCreativeTab(Chemistry.CREATIVE_TAB);
     }
 }
