@@ -2,5 +2,6 @@ item.hydrogen.name=Hydrogen
 item.helium.name=Helium
 
 tile.chemistryTable.name=Chemistry Table
+tile.chemistryDecomposer.name=Chemistry Decomposer
 
 itemGroup.tabChemistry=Chemistry

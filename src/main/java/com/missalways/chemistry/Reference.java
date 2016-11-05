@@ -4,7 +4,7 @@ package com.missalways.chemistry;
  * Created by MissAlways on 2.11.2016.
  */
 public class Reference {
-    public static final String Mod_ID = "chemistry";
+    public static final String MOD_ID = "chemistry";
     public static final String NAME = "Chemistry";
     public static final String VERSION = "1.0";
     public static final String ACCEPTED_VERSION = "[1.10.2]";
@@ -35,7 +35,8 @@ public class Reference {
     }
 
     public static enum ChemistryBlocks {
-        CHEMISTRYTABLE("chemistryTable", "BlockChemistryTable");
+        CHEMISTRYTABLE("chemistryTable", "BlockChemistryTable"),
+        CHEMISTRYDECOMPOSER("chemistryDecomposer","BlockChemistryDecomposer");
 
         private String unlocalizedName;
         private String registryName;

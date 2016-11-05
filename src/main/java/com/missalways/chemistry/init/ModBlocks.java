@@ -1,5 +1,6 @@
 package com.missalways.chemistry.init;
 
+import com.missalways.chemistry.blocks.BlockChemistryDecomposer;
 import com.missalways.chemistry.blocks.BlockChemistryTable;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -14,13 +15,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 
     public static Block chemistryTable;
+    public static Block chemistryDecomposer;
 
     public static void init() {
         chemistryTable = new BlockChemistryTable();
+        chemistryDecomposer = new BlockChemistryDecomposer();
     }
 
     public static void register() {
         registerBlock(chemistryTable);
+        registerBlock(chemistryDecomposer);
     }
 
     private static void registerBlock(Block block) {
@@ -32,6 +36,7 @@ public class ModBlocks {
 
     public static void registerRenders() {
         registerRender(chemistryTable);
+        registerRender(chemistryDecomposer);
     }
 
     private static void registerRender(Block block) {
